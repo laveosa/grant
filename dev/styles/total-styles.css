@@ -1,0 +1,9 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-wraper {
+  border: 1px solid red;
+}
