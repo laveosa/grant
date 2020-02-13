@@ -1,0 +1,41 @@
+<div class="navigation-container bg-dark">
+  <ul
+    class="nav nav-pills container d-flex justify-content-end align-items-center"
+  >
+    <li class="nav-link">
+      <% if(nav.selectedTab == '/'){%>
+      <a href="/" class="nav-link active">
+        <span class="font-weight-bolder text-capitalize">home</span>
+      </a>
+      <%} else {%>
+      <a href="/" class="nav-link">
+        <span class="font-weight-bolder text-capitalize text-light">home</span>
+      </a>
+      <%}%>
+    </li>
+    <li class="nav-link">
+      <% if(nav.selectedTab == '/about'){%>
+      <a href="/about" class="nav-link active">
+        <span class="font-weight-bolder text-capitalize">about</span>
+      </a>
+      <%} else {%>
+      <a href="/about" class="nav-link">
+        <span class="font-weight-bolder text-capitalize text-light">about</span>
+      </a>
+      <%}%>
+    </li>
+    <li class="nav-link">
+      <% if(nav.selectedTab == '/contacts'){%>
+      <a href="/contacts" class="nav-link active">
+        <span class="font-weight-bolder text-capitalize">contacts</span>
+      </a>
+      <%} else {%>
+      <a href="/contacts" class="nav-link">
+        <span class="font-weight-bolder text-capitalize text-light"
+          >contacts</span
+        >
+      </a>
+      <%}%>
+    </li>
+  </ul>
+</div>
