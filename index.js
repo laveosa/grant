@@ -89,7 +89,7 @@ const server = http.createServer((req, res) => {
     });
   }
 
-  if (req.url == "/about") {
+  if (req.url == "/about/:tabId") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
 
