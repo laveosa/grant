@@ -1,0 +1,30 @@
+{
+  "name": "grant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app",
+    "deploy": "gh-pages -d /app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laveosa/grant.git"
+  },
+  "author": "Nikolay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laveosa/grant/issues"
+  },
+  "homepage": "https://laveosa.github.io/grant",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "uuid": "^7.0.2"
+  }
+}
