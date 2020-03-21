@@ -1,36 +1,37 @@
 const EventEmitter = require("events");
-const fs = require("fs");
 const uuid = require("uuid");
-const path = require("path");
 
 class User extends EventEmitter {
-  constructor(_name, _email) {
+  constructor(newUser) {
     super();
-    this.id = uuid.v4();
-    this.name = _name || "user";
-    this.email = _email || "user@email.com";
-
-    this.createUser({
-      id: this.id,
-      name: this.name,
-      email: this.email
-    });
+    this._id = uuid.v4();
+    this._name = newUser.name || "new-user";
+    this._email = newUser.email || "new-user@email.com";
+    this._age = newUser.age || null;
   }
   get name() {
-    return this.name;
+    return this._name;
   }
-  set name(name) {
-    this.name = name;
+  set name(value) {
+    this._name = value;
   }
   get email() {
-    return this.email;
+    return this._email;
   }
-  set email(email) {
-    this.email = email;
+  set email(value) {
+    this._email = value;
   }
-  createUser(user) {
-    fs.readFile(path.join(__dirname, ""));
+  get age() {
+    return this._age;
   }
-  updateUser(user) {}
-  deleteUser(id) {}
+  set age(value) {
+    this._age = value;
+  }
+  updateUser(user) {
+    this._name = user.name || this._name;
+    this._email = user.email || this._email;
+    this._age = user.age || this._age;
+  }
 }
+
+module.exports = User;
