@@ -3,10 +3,11 @@ const path = require("path");
 const dotenv = require("dotenv").config();
 const exphbs = require("express-handlebars");
 
-const User = require("./app/server/classes/User.js");
+const UsersController = require("./app/server/controller/UsersController.js");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const Users = new UsersController();
 
 app.engine(
   "hbs",
@@ -21,21 +22,14 @@ app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "app/server/views/"));
 
 app.use(express.static(path.join(__dirname, "app/client/")));
+// app.use(express.json());
 
 app.get("/", (req, res) => {
   res.render("home", {});
 });
 
 app.get("/add-user", (req, res) => {
-  var Nik = new User({
-    name: req.query.name || "Nik",
-    email: req.query.email || "laveosa@yahoo.com",
-    age: req.query.age || 18
-  });
-
-  Nik.getAllUsers().then(response => {
-    res.json(response);
-  });
+  Users.createUser();
 });
 
 app.get("/all", (req, res) => {
