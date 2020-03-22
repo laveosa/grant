@@ -23,7 +23,27 @@ app.use(express.static(path.join(__dirname, "app/client/")));
 app.use(express.json());
 
 app.get("/", (req, res) => {
+  res.redirect("/home");
+});
+
+app.get("/home", (req, res) => {
   res.render("home", {});
+});
+
+app.get("/users", (req, res) => {
+  res.render("users");
+});
+
+app.get("/add-user", (req, res) => {
+  res.render("add-user");
+});
+
+app.get("/companies", (req, res) => {
+  res.render("companies");
+});
+
+app.get("/add-companie", (req, res) => {
+  res.render("add-companie");
 });
 
 app.use("/api/users", UsersRouter);
