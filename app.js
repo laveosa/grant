@@ -22,18 +22,62 @@ app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "app/server/views/"));
 
 app.use(express.static(path.join(__dirname, "app/client/")));
-// app.use(express.json());
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.render("home", {});
 });
 
-app.get("/add-user", (req, res) => {
-  Users.createUser();
+const userKey = "/api/users";
+
+app.get(userKey + "/", (req, res) => {
+  Users.getAllUsers().then(response => {
+    res.json(response);
+  });
 });
 
-app.get("/all", (req, res) => {
-  res.send("success");
+app.post(userKey + "/", (req, res) => {
+  Users.createUser(req.body).then(response => {
+    Users.getAllUsers().then(response => {
+      res.json(response);
+    });
+  });
+});
+
+app.get(userKey + "/:id", (req, res) => {
+  Users.readUserById(req.params.id).then(response => {
+    res.json(response);
+  });
+});
+
+app.post(userKey + "/:id", (req, res) => {
+  Users.updateUser(req.params.id, req.body).then(response => {
+    Users.getAllUsers().then(response => {
+      res.json(response);
+    });
+  });
+});
+
+app.get(userKey + "/:name", (req, res) => {
+  Users.readUserByName(req.params.name).then(response => {
+    res.json(response);
+  });
+});
+
+app.delete(userKey + "/", (req, res) => {
+  Users.deleteAllUsers().then(response => {
+    Users.getAllUsers().then(response => {
+      res.json(response);
+    });
+  });
+});
+
+app.delete(userKey + "/:id", (req, res) => {
+  Users.deleteUser(req.params.id).then(response => {
+    Users.getAllUsers().then(response => {
+      res.json(response);
+    });
+  });
 });
 
 app.listen(PORT, () => {
