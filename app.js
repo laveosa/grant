@@ -4,11 +4,10 @@ const dotenv = require("dotenv").config();
 const exphbs = require("express-handlebars");
 
 const UsersController = require("./app/server/controller/UsersController.js");
-const UsersProvider = require("./app/server/DB/provider/UsersProvider.js");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const Users = new UsersProvider();
+const Users = new UsersController();
 
 app.engine(
   "hbs",
