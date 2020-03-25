@@ -1,0 +1,32 @@
+[
+  {
+    "url": "/home",
+    "name": "home",
+    "active": false
+  },
+  {
+    "url": "/users",
+    "name": "users",
+    "active": false
+  },
+  {
+    "url": "/companies",
+    "name": "companies",
+    "active": false
+  },
+  {
+    "url": "/vehicles",
+    "name": "vehicles",
+    "active": false
+  },
+  {
+    "url": "/foods",
+    "name": "foods",
+    "active": false
+  },
+  {
+    "url": "/log",
+    "name": "log",
+    "active": false
+  }
+]
