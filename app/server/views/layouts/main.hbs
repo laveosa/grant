@@ -4,13 +4,13 @@
 {{> head}}
 
 <body>
-    <div class="navigation-wraper">
-        {{> navigation/nav}}
-    </div>
     <div class="main-wraper">
-        {{{body}}}
+        {{> navigation/nav}}
+        <section class="page-wraper">
+            {{{body}}}
+        </section>
+        {{> footer}}
     </div>
-    {{> footer}}
     {{> scripts}}
 </body>
 

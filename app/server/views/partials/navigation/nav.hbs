@@ -1,3 +1,27 @@
-<div id="NavigationPartials">
-    <span>navigation partials</span>
-</div>
+<header id="NavigationPartials" class="bg-dark">
+    <div class="navigation-container container d-flex justify-content-center">
+        <div class="logo-cover">
+            <span>logo</span>
+        </div>
+        <div class="nav-cover pt-1">
+            <ul class="nav">
+                {{#each nav.tabs}}
+                {{#if active}}
+                <li class="nav-item mr-1">
+                    <a class="nav-link p-3 text-capitalize text-white active" href={{url}}>{{name}}</a>
+                </li>
+                {{else}}
+                <li class="nav-item mr-1">
+                    <a class="nav-link p-3 text-capitalize text-white" href={{url}}>{{name}}</a>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="nav-controls-cover">
+            <div class="user-cover">
+                <span>user</span>
+            </div>
+        </div>
+    </div>
+</header>

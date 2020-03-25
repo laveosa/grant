@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-wraper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*------------------ NAVIGATION AREA ------------------*/
+.main-wraper #NavigationPartials {
+}
+
+.main-wraper #NavigationPartials .nav {
+}
+
+.main-wraper #NavigationPartials .nav .nav-item {
+}
+
+.main-wraper #NavigationPartials .nav .nav-item .nav-link {
+  border-bottom: 4px solid transparent;
+  min-width: 111px;
+  text-align: center;
+}
+
+.main-wraper #NavigationPartials .nav .nav-item .nav-link:hover {
+  border-bottom: 4px solid #097bed;
+}
+
+.main-wraper #NavigationPartials .nav .nav-item .nav-link.active {
+  border-bottom: 4px solid #097bed;
+}
+
+/*------------------ ALL PAGES AREA ------------------*/
+.main-wraper .page-wraper {
+  display: flex;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.main-wraper .page-wraper > div {
+  width: 100%;
+}
+
+.main-wraper .page-wraper #HomePage {
+}
+
+/*------------------ FOOTER AREA ------------------*/
+.main-wraper #FooterPartials {
+}
