@@ -27,5 +27,5 @@ app.use(PagesRouter);
 app.use("/api/users", UsersRouter);
 
 app.listen(PORT, () => {
-  console.log("server runing...");
+  // console.log("server runing...");
 });
