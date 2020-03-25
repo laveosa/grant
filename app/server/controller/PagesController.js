@@ -8,10 +8,7 @@ const Articles = new ArticlesOrganiser();
 class PagesController extends EventEmitter {
   constructor() {
     super();
-    this.model = {
-      nav: null,
-      articles: null
-    };
+    this.model = null;
   }
   organiseModel(url) {
     return Promise.all([Navigation.initialize(), Articles.initialize()]).then(
