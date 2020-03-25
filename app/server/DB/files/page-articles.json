@@ -1,0 +1,26 @@
+[
+  {
+    "url": "/home",
+    "mainTitle": "Home page"
+  },
+  {
+    "url": "/users",
+    "mainTitle": "Users page"
+  },
+  {
+    "url": "/companies",
+    "mainTitle": "Companies page"
+  },
+  {
+    "url": "/vehicles",
+    "mainTitle": "Vehicles page"
+  },
+  {
+    "url": "/foods",
+    "mainTitle": "Foods page"
+  },
+  {
+    "url": "/log",
+    "mainTitle": "Log page"
+  }
+]

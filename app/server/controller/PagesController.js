@@ -1,26 +1,6 @@
 const EventEmitter = require("events");
 const NavigationOrganiser = require("../classes/NavigationOrganiser.js");
-
-class ArticlesOrganiser {
-  constructor() {
-    this.allArticles = {};
-  }
-  organise(url) {
-    return {
-      mainTitle: "Page Title"
-    };
-  }
-  getAllPageTitlesFromDB() {
-    return new Promise((resolve, reject) => {
-      resolve(true);
-    });
-  }
-  initialize() {
-    return Promise.all([this.getAllPageTitlesFromDB()]).then(response => {
-      return response;
-    });
-  }
-}
+const ArticlesOrganiser = require("../classes/ArticlesOrganiser.js");
 
 const Navigation = new NavigationOrganiser();
 const Articles = new ArticlesOrganiser();
