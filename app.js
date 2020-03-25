@@ -27,23 +27,23 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.render("home", {});
+  res.render("pages/home", {});
 });
 
 app.get("/users", (req, res) => {
-  res.render("users");
+  res.render("pages/users");
 });
 
-app.get("/add-user", (req, res) => {
-  res.render("add-user");
+app.get("/foods", (req, res) => {
+  res.render("pages/foods");
 });
 
 app.get("/companies", (req, res) => {
   res.render("companies");
 });
 
-app.get("/add-companie", (req, res) => {
-  res.render("add-companie");
+app.get("/vehicles", (req, res) => {
+  res.render("pages/vehicles");
 });
 
 app.use("/api/users", UsersRouter);
