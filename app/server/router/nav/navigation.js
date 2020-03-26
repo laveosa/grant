@@ -20,7 +20,7 @@ router.get("/users", (req, res) => {
   });
 });
 
-router.get("/foods", (req, res) => {
+router.get("/products", (req, res) => {
   View.organiseModel(req.url).then(model => {
     res.render("pages" + req.url, model);
   });

@@ -1,3 +1,8 @@
+:root {
+  --active-color: #218cf7;
+  --secondary-color: #ffbb00;
+}
+
 html,
 body {
   margin: 0px;
@@ -11,7 +16,7 @@ body {
   justify-content: space-between;
 }
 
-/*------------------ NAVIGATION AREA ------------------*/
+/*------------------ NAVIGATION ------------------*/
 .main-wraper #NavigationPartials {
 }
 
@@ -28,14 +33,16 @@ body {
 }
 
 .main-wraper #NavigationPartials .nav .nav-item .nav-link:hover {
-  border-bottom: 4px solid #097bed;
+  /* border-bottom: 4px solid var(--active-color); */
+  border-bottom: 4px solid var(--secondary-color);
 }
 
 .main-wraper #NavigationPartials .nav .nav-item .nav-link.active {
-  border-bottom: 4px solid #097bed;
+  /* border-bottom: 4px solid var(--active-color); */
+  border-bottom: 4px solid var(--secondary-color);
 }
 
-/*------------------ ALL PAGES AREA ------------------*/
+/*------------------ ALL PAGES ------------------*/
 .main-wraper .page-wraper {
   display: flex;
   flex-grow: 1;
@@ -46,9 +53,55 @@ body {
   width: 100%;
 }
 
+/*>>>>>>>>>>>>>>>>>>>>>  HOME PAGE*/
 .main-wraper .page-wraper #HomePage {
 }
 
-/*------------------ FOOTER AREA ------------------*/
+.main-wraper .page-wraper #UsersPage .home-container {
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>  USERS PAGE*/
+.main-wraper .page-wraper #UsersPage {
+}
+
+.main-wraper .page-wraper #UsersPage .users-container {
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>  COMPANIES PAGE*/
+.main-wraper .page-wraper #CompaniesPage {
+}
+
+.main-wraper .page-wraper #UsersPage .companies-container {
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>  VEHICLES PAGE*/
+.main-wraper .page-wraper #VehiclesPage {
+}
+
+.main-wraper .page-wraper #UsersPage .vehicles-container {
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>  PRODUCT PAGE*/
+.main-wraper .page-wraper #ProductsPage {
+}
+
+.main-wraper .page-wraper #UsersPage .products-container {
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>  LOG PAGE*/
+.main-wraper .page-wraper #LogPage {
+}
+
+.main-wraper .page-wraper #UsersPage .log-container {
+}
+
+/*------------------ FOOTER ------------------*/
 .main-wraper #FooterPartials {
 }
+
+.main-wraper .page-wraper #UsersPage .footer-container {
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*------------------ PARTIALS ------------------*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
