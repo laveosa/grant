@@ -13,8 +13,15 @@
   src: url("../media/fonts/Baloo_2/Baloo2-Regular.ttf");
 }
 
+/*  font variables */
 :root {
   --font-baloo-bold: "Ballo-Bold", serif;
   --font-baloo-medium: "Ballo-Medium", serif;
   --font-baloo-regular: "Ballo-Regular", serif;
+}
+
+/*  color variables */
+:root {
+  --color-main: #218cf7;
+  --color-secondary: #ffbb00;
 }

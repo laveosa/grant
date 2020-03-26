@@ -1,7 +1,4 @@
-:root {
-  --active-color: #218cf7;
-  --secondary-color: #ffbb00;
-}
+@import "../../tools.css";
 
 #NavigationPartials {
 }
@@ -19,11 +16,9 @@
 }
 
 #NavigationPartials .nav .nav-item .nav-link:hover {
-  /* border-bottom: 4px solid var(--active-color); */
-  border-bottom: 4px solid var(--secondary-color);
+  border-bottom: 4px solid var(--color-secondary);
 }
 
 #NavigationPartials .nav .nav-item .nav-link.active {
-  /* border-bottom: 4px solid var(--active-color); */
-  border-bottom: 4px solid var(--secondary-color);
+  border-bottom: 4px solid var(--color-secondary);
 }
