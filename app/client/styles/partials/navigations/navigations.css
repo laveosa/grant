@@ -1,0 +1,29 @@
+:root {
+  --active-color: #218cf7;
+  --secondary-color: #ffbb00;
+}
+
+#NavigationPartials {
+}
+
+#NavigationPartials .nav {
+}
+
+#NavigationPartials .nav .nav-item {
+}
+
+#NavigationPartials .nav .nav-item .nav-link {
+  border-bottom: 4px solid transparent;
+  min-width: 111px;
+  text-align: center;
+}
+
+#NavigationPartials .nav .nav-item .nav-link:hover {
+  /* border-bottom: 4px solid var(--active-color); */
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+#NavigationPartials .nav .nav-item .nav-link.active {
+  /* border-bottom: 4px solid var(--active-color); */
+  border-bottom: 4px solid var(--secondary-color);
+}

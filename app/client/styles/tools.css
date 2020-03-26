@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Ballo-Bold";
+  src: url("../media/fonts/Baloo_2/Baloo2-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Ballo-Medium";
+  src: url("../media/fonts/Baloo_2/Baloo2-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Ballo-Regular";
+  src: url("../media/fonts/Baloo_2/Baloo2-Regular.ttf");
+}
+
+:root {
+  --font-baloo-bold: "Ballo-Bold", serif;
+  --font-baloo-medium: "Ballo-Medium", serif;
+  --font-baloo-regular: "Ballo-Regular", serif;
+}

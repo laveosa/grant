@@ -1,7 +1,4 @@
-:root {
-  --active-color: #218cf7;
-  --secondary-color: #ffbb00;
-}
+@import "./tools.css";
 
 html,
 body {
@@ -16,30 +13,8 @@ body {
   justify-content: space-between;
 }
 
-/*------------------ NAVIGATION ------------------*/
-.main-wraper #NavigationPartials {
-}
-
-.main-wraper #NavigationPartials .nav {
-}
-
-.main-wraper #NavigationPartials .nav .nav-item {
-}
-
-.main-wraper #NavigationPartials .nav .nav-item .nav-link {
-  border-bottom: 4px solid transparent;
-  min-width: 111px;
-  text-align: center;
-}
-
-.main-wraper #NavigationPartials .nav .nav-item .nav-link:hover {
-  /* border-bottom: 4px solid var(--active-color); */
-  border-bottom: 4px solid var(--secondary-color);
-}
-
-.main-wraper #NavigationPartials .nav .nav-item .nav-link.active {
-  /* border-bottom: 4px solid var(--active-color); */
-  border-bottom: 4px solid var(--secondary-color);
+* {
+  font-family: var(--font-baloo-regular);
 }
 
 /*------------------ ALL PAGES ------------------*/
@@ -102,6 +77,6 @@ body {
 .main-wraper .page-wraper #UsersPage .footer-container {
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
 /*------------------ PARTIALS ------------------*/
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
