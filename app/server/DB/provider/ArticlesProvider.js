@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const DBpath = "./app/server/DB/files/page-articles.json";
 
-class ArticlesOrganiser {
+class ArticlesProvider {
   constructor() {
     this.articles = [];
   }
@@ -42,4 +42,4 @@ class ArticlesOrganiser {
   }
 }
 
-module.exports = ArticlesOrganiser;
+module.exports = ArticlesProvider;

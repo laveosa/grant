@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const DBpath = "./app/server/DB/files/navigation-tabs.json";
 
-class NavigationOrganiser {
+class NavigationProvider {
   constructor() {
     this.tabs = [];
   }
@@ -79,4 +79,4 @@ class NavigationOrganiser {
   }
 }
 
-module.exports = NavigationOrganiser;
+module.exports = NavigationProvider;

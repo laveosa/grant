@@ -1,11 +1,11 @@
 const EventEmitter = require("events");
-const NavigationOrganiser = require("../classes/NavigationOrganiser.js");
-const ArticlesOrganiser = require("../classes/ArticlesOrganiser.js");
+const NavigationProvider = require("../DB/provider/NavigationProvider.js");
+const ArticlesProvider = require("../DB/provider/ArticlesProvider");
 
-const Navigation = new NavigationOrganiser();
-const Articles = new ArticlesOrganiser();
+const Navigation = new NavigationProvider();
+const Articles = new ArticlesProvider();
 
-class PagesController extends EventEmitter {
+class ViewController extends EventEmitter {
   constructor() {
     super();
     this.model = null;
@@ -22,4 +22,4 @@ class PagesController extends EventEmitter {
   }
 }
 
-module.exports = PagesController;
+module.exports = ViewController;
