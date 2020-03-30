@@ -1,6 +1,12 @@
 <div id="ProductsPage">
-    <div class="products-container">
-        <h1>{{articles.mainTitle}}</h1>
-
+    <div class="products-container h-100">
+        {{#> pageStructure/page-structure}}
+        {{#*inline "info"}}
+        {{> info-side/users-info-side}}
+        {{/inline}}
+        {{#*inline "content"}}
+        {{> content-side/users-content}}
+        {{/inline}}
+        {{/pageStructure/page-structure}}
     </div>
 </div>
