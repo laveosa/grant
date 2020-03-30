@@ -1,35 +1,21 @@
-<div class="page-structure">
-    <div class="bread-crumbs-block">
-        <div class="bread-crumbs">
-            <span class="txt-baloo">bread crumbs</span>
-        </div>
-    </div>
-    <div class="page-block">
-        <div class="page">
-            <div class="page-info-block">
-                <div class="page-info bg-dark">
+<div class="page-structure h-100 d-flex flex-column">
+    <div class="page-block container-fluid p-0 flex-grow-1">
+        <div class="page-container row m-0 h-100 d-flex">
+            <div class="page-info-block bg-dark col-2 p-3 flex-grow-1 border-right border-secondary">
+                <div class="page-info">
                     <h1>{{articles.mainTitle}}</h1>
                 </div>
             </div>
-            <div class="page-content-block">
+            <div class="page-content-block bg-light col-10 p-0 flex-grow-1">
                 <div class="page-content">
-                    <div class="nav-tabs-block">
-                        <div class="nav-tabs">
-                            <span>nav tabs</span>
-                        </div>
-                    </div>
-                    <div class="content-block">
+                    {{> inner-tabs/inner-tabs}}
+                    <div class="content-block p-3">
                         <div class="content">
-                            <span>content</span>
+                            <span>some text</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="go-up-button-block">
-        <div class="go-up-button">
-            <span>go up button</span>
         </div>
     </div>
 </div>

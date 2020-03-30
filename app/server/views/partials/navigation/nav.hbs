@@ -1,26 +1,33 @@
-<header id="NavigationPartials" class="bg-dark">
-    <div class="navigation-container container d-flex justify-content-center">
-        <div class="logo-cover">
-            <span>logo</span>
+<header id="NavigationPartials" class="">
+    <div class="header-container bg-dark">
+        <div class="navigation-container container d-flex justify-content-center">
+            <div class="logo-cover">
+                <span>logo</span>
+            </div>
+            <div class="nav-cover pt-1">
+                <ul class="nav">
+                    {{#each nav.tabs}}
+                    {{#if active}}
+                    <li class="nav-item mr-1">
+                        <a class="nav-link p-3 text-capitalize text-white active" href={{url}}>{{name}}</a>
+                    </li>
+                    {{else}}
+                    <li class="nav-item mr-1">
+                        <a class="nav-link p-3 text-capitalize text-white" href={{url}}>{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="nav-controls-cover">
+                <div class="user-cover">
+                    <span>user</span>
+                </div>
+            </div>
         </div>
-        <div class="nav-cover pt-1">
-            <ul class="nav">
-                {{#each nav.tabs}}
-                {{#if active}}
-                <li class="nav-item mr-1">
-                    <a class="nav-link p-3 text-capitalize text-white active" href={{url}}>{{name}}</a>
-                </li>
-                {{else}}
-                <li class="nav-item mr-1">
-                    <a class="nav-link p-3 text-capitalize text-white" href={{url}}>{{name}}</a>
-                </li>
-                {{/if}}
-                {{/each}}
-            </ul>
-        </div>
-        <div class="nav-controls-cover">
-            <div class="user-cover">
-                <span>user</span>
+        <div class="bread-crumbs-block bg-dark border-top border-bottom border-secondary p-1 pl-3">
+            <div class="bread-crumbs">
+                <span class="txt-baloo">bread crumbs</span>
             </div>
         </div>
     </div>

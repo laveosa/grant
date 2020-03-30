@@ -3,11 +3,34 @@
 .page-structure {
 }
 
-.page-structure .bread-crumbs-block {
-}
-
 .page-structure .page-block {
 }
 
-.page-structure .go-up-button-block {
+.page-structure .page-block .page-container {
+}
+
+/*---------------- INFO BLOCK ----------------*/
+.page-structure .page-block .page-container .page-info-block {
+}
+
+.page-structure .page-block .page-container .page-info-block .page-info {
+}
+
+/*---------------- CONTENT BLOCK ----------------*/
+.page-structure .page-block .page-container .page-content-block {
+}
+
+.page-structure .page-block .page-container .page-content-block .page-content {
+}
+
+.page-structure
+  .page-block
+  .page-container
+  .page-content-block
+  .page-content
+  .content-block {
+}
+
+/*---------------- INNER TABS ----------------*/
+.inner-tabs {
 }

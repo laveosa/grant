@@ -1,6 +1,15 @@
 @import "../../tools.css";
 
 #NavigationPartials {
+  min-height: 98px;
+  position: relative;
+  z-index: 1;
+}
+
+#NavigationPartials .header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #NavigationPartials .nav {
@@ -21,4 +30,12 @@
 
 #NavigationPartials .nav .nav-item .nav-link.active {
   border-bottom: 4px solid var(--color-secondary);
+}
+
+/*---------------- BREAD CRUMBS ----------------*/
+.bread-crumbs-block {
+  /* background-color: var(--color-secondary); */
+}
+
+.bread-crumbs-block .bread-crumbs {
 }
