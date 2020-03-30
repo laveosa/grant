@@ -1,5 +1,12 @@
 <div id="UsersPage">
     <div class="users-container h-100">
-        {{> pageStructure/page-structure}}
+        {{#> pageStructure/page-structure}}
+        {{#*inline "info"}}
+        {{> info-side/users-info-side}}
+        {{/inline}}
+        {{#*inline "content"}}
+        {{> content-side/users-content}}
+        {{/inline}}
+        {{/pageStructure/page-structure}}
     </div>
 </div>

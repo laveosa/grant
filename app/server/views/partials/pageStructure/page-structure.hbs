@@ -2,17 +2,13 @@
     <div class="page-block container-fluid p-0 flex-grow-1">
         <div class="page-container row m-0 h-100 d-flex">
             <div class="page-info-block bg-dark col-2 p-3 flex-grow-1 border-right border-secondary">
-                <div class="page-info">
-                    <h1>{{articles.mainTitle}}</h1>
-                </div>
+                {{> info}}
             </div>
             <div class="page-content-block bg-light col-10 p-0 flex-grow-1">
                 <div class="page-content">
                     {{> inner-tabs/inner-tabs}}
                     <div class="content-block p-3">
-                        <div class="content">
-                            <span>some text</span>
-                        </div>
+                        {{> content}}
                     </div>
                 </div>
             </div>
